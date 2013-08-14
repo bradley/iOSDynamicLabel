@@ -1,0 +1,504 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD51AB1317A78095001DE55D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD51AB1217A78095001DE55D /* Foundation.framework */; };
+		AD51AB1517A78095001DE55D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD51AB1417A78095001DE55D /* CoreGraphics.framework */; };
+		AD51AB1717A78095001DE55D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD51AB1617A78095001DE55D /* UIKit.framework */; };
+		AD51AB1917A78095001DE55D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD51AB1817A78095001DE55D /* CoreData.framework */; };
+		AD51AB1F17A78095001DE55D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD51AB1D17A78095001DE55D /* InfoPlist.strings */; };
+		AD51AB2117A78095001DE55D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD51AB2017A78095001DE55D /* main.m */; };
+		AD51AB2517A78095001DE55D /* DLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD51AB2417A78095001DE55D /* DLAppDelegate.m */; };
+		AD51AB2817A78095001DE55D /* DynamicLabel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AD51AB2617A78095001DE55D /* DynamicLabel.xcdatamodeld */; };
+		AD51AB2A17A78095001DE55D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD51AB2917A78095001DE55D /* Images.xcassets */; };
+		AD51AB3117A78096001DE55D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD51AB3017A78096001DE55D /* XCTest.framework */; };
+		AD51AB3217A78096001DE55D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD51AB1217A78095001DE55D /* Foundation.framework */; };
+		AD51AB3317A78096001DE55D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD51AB1617A78095001DE55D /* UIKit.framework */; };
+		AD51AB3417A78096001DE55D /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD51AB1817A78095001DE55D /* CoreData.framework */; };
+		AD51AB3C17A78096001DE55D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD51AB3A17A78096001DE55D /* InfoPlist.strings */; };
+		AD51AB3E17A78096001DE55D /* DynamicLabelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD51AB3D17A78096001DE55D /* DynamicLabelTests.m */; };
+		AD51AB4C17A78135001DE55D /* DLDynamicLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = AD51AB4817A780AF001DE55D /* DLDynamicLabel.m */; };
+		AD51AB4D17A78138001DE55D /* DLDynamicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = AD51AB4B17A78129001DE55D /* DLDynamicCell.m */; };
+		AD51AB5117A78215001DE55D /* DLTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD51AB5017A781E7001DE55D /* DLTableViewController.m */; };
+		AD51AB5217A83430001DE55D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD51AB4917A780CC001DE55D /* MainStoryboard.storyboard */; };
+		AD51AB5417A84F3F001DE55D /* DLDynamicCellXib.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD51AB5317A84E5E001DE55D /* DLDynamicCellXib.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD51AB3517A78096001DE55D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD51AB0717A78095001DE55D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD51AB0E17A78095001DE55D;
+			remoteInfo = DynamicLabel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AD51AB0F17A78095001DE55D /* DynamicLabel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DynamicLabel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD51AB1217A78095001DE55D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AD51AB1417A78095001DE55D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AD51AB1617A78095001DE55D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AD51AB1817A78095001DE55D /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		AD51AB1C17A78095001DE55D /* DynamicLabel-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DynamicLabel-Info.plist"; sourceTree = "<group>"; };
+		AD51AB1E17A78095001DE55D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AD51AB2017A78095001DE55D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AD51AB2217A78095001DE55D /* DynamicLabel-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DynamicLabel-Prefix.pch"; sourceTree = "<group>"; };
+		AD51AB2317A78095001DE55D /* DLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLAppDelegate.h; sourceTree = "<group>"; };
+		AD51AB2417A78095001DE55D /* DLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLAppDelegate.m; sourceTree = "<group>"; };
+		AD51AB2717A78095001DE55D /* DynamicLabel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DynamicLabel.xcdatamodel; sourceTree = "<group>"; };
+		AD51AB2917A78095001DE55D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AD51AB2F17A78096001DE55D /* DynamicLabelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DynamicLabelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD51AB3017A78096001DE55D /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AD51AB3917A78096001DE55D /* DynamicLabelTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DynamicLabelTests-Info.plist"; sourceTree = "<group>"; };
+		AD51AB3B17A78096001DE55D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AD51AB3D17A78096001DE55D /* DynamicLabelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicLabelTests.m; sourceTree = "<group>"; };
+		AD51AB4717A780AF001DE55D /* DLDynamicLabel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLDynamicLabel.h; sourceTree = "<group>"; };
+		AD51AB4817A780AF001DE55D /* DLDynamicLabel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLDynamicLabel.m; sourceTree = "<group>"; };
+		AD51AB4917A780CC001DE55D /* MainStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		AD51AB4A17A78129001DE55D /* DLDynamicCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLDynamicCell.h; sourceTree = "<group>"; };
+		AD51AB4B17A78129001DE55D /* DLDynamicCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLDynamicCell.m; sourceTree = "<group>"; };
+		AD51AB4F17A781E7001DE55D /* DLTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLTableViewController.h; sourceTree = "<group>"; };
+		AD51AB5017A781E7001DE55D /* DLTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLTableViewController.m; sourceTree = "<group>"; };
+		AD51AB5317A84E5E001DE55D /* DLDynamicCellXib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DLDynamicCellXib.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD51AB0C17A78095001DE55D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD51AB1517A78095001DE55D /* CoreGraphics.framework in Frameworks */,
+				AD51AB1917A78095001DE55D /* CoreData.framework in Frameworks */,
+				AD51AB1717A78095001DE55D /* UIKit.framework in Frameworks */,
+				AD51AB1317A78095001DE55D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD51AB2C17A78096001DE55D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD51AB3117A78096001DE55D /* XCTest.framework in Frameworks */,
+				AD51AB3417A78096001DE55D /* CoreData.framework in Frameworks */,
+				AD51AB3317A78096001DE55D /* UIKit.framework in Frameworks */,
+				AD51AB3217A78096001DE55D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD51AB0617A78095001DE55D = {
+			isa = PBXGroup;
+			children = (
+				AD51AB1A17A78095001DE55D /* DynamicLabel */,
+				AD51AB3717A78096001DE55D /* DynamicLabelTests */,
+				AD51AB1117A78095001DE55D /* Frameworks */,
+				AD51AB1017A78095001DE55D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD51AB1017A78095001DE55D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD51AB0F17A78095001DE55D /* DynamicLabel.app */,
+				AD51AB2F17A78096001DE55D /* DynamicLabelTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD51AB1117A78095001DE55D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD51AB1217A78095001DE55D /* Foundation.framework */,
+				AD51AB1417A78095001DE55D /* CoreGraphics.framework */,
+				AD51AB1617A78095001DE55D /* UIKit.framework */,
+				AD51AB1817A78095001DE55D /* CoreData.framework */,
+				AD51AB3017A78096001DE55D /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD51AB1A17A78095001DE55D /* DynamicLabel */ = {
+			isa = PBXGroup;
+			children = (
+				AD51AB2317A78095001DE55D /* DLAppDelegate.h */,
+				AD51AB2417A78095001DE55D /* DLAppDelegate.m */,
+				AD51AB4F17A781E7001DE55D /* DLTableViewController.h */,
+				AD51AB5017A781E7001DE55D /* DLTableViewController.m */,
+				AD51AB4A17A78129001DE55D /* DLDynamicCell.h */,
+				AD51AB4B17A78129001DE55D /* DLDynamicCell.m */,
+				AD51AB5317A84E5E001DE55D /* DLDynamicCellXib.xib */,
+				AD51AB4717A780AF001DE55D /* DLDynamicLabel.h */,
+				AD51AB4817A780AF001DE55D /* DLDynamicLabel.m */,
+				AD51AB4917A780CC001DE55D /* MainStoryboard.storyboard */,
+				AD51AB2917A78095001DE55D /* Images.xcassets */,
+				AD51AB2617A78095001DE55D /* DynamicLabel.xcdatamodeld */,
+				AD51AB1B17A78095001DE55D /* Supporting Files */,
+			);
+			path = DynamicLabel;
+			sourceTree = "<group>";
+		};
+		AD51AB1B17A78095001DE55D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD51AB1C17A78095001DE55D /* DynamicLabel-Info.plist */,
+				AD51AB1D17A78095001DE55D /* InfoPlist.strings */,
+				AD51AB2017A78095001DE55D /* main.m */,
+				AD51AB2217A78095001DE55D /* DynamicLabel-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD51AB3717A78096001DE55D /* DynamicLabelTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD51AB3D17A78096001DE55D /* DynamicLabelTests.m */,
+				AD51AB3817A78096001DE55D /* Supporting Files */,
+			);
+			path = DynamicLabelTests;
+			sourceTree = "<group>";
+		};
+		AD51AB3817A78096001DE55D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD51AB3917A78096001DE55D /* DynamicLabelTests-Info.plist */,
+				AD51AB3A17A78096001DE55D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD51AB0E17A78095001DE55D /* DynamicLabel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD51AB4117A78096001DE55D /* Build configuration list for PBXNativeTarget "DynamicLabel" */;
+			buildPhases = (
+				AD51AB0B17A78095001DE55D /* Sources */,
+				AD51AB0C17A78095001DE55D /* Frameworks */,
+				AD51AB0D17A78095001DE55D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DynamicLabel;
+			productName = DynamicLabel;
+			productReference = AD51AB0F17A78095001DE55D /* DynamicLabel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD51AB2E17A78096001DE55D /* DynamicLabelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD51AB4417A78096001DE55D /* Build configuration list for PBXNativeTarget "DynamicLabelTests" */;
+			buildPhases = (
+				AD51AB2B17A78096001DE55D /* Sources */,
+				AD51AB2C17A78096001DE55D /* Frameworks */,
+				AD51AB2D17A78096001DE55D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD51AB3617A78096001DE55D /* PBXTargetDependency */,
+			);
+			name = DynamicLabelTests;
+			productName = DynamicLabelTests;
+			productReference = AD51AB2F17A78096001DE55D /* DynamicLabelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD51AB0717A78095001DE55D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DL;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Bradley Griffith";
+				TargetAttributes = {
+					AD51AB2E17A78096001DE55D = {
+						TestTargetID = AD51AB0E17A78095001DE55D;
+					};
+				};
+			};
+			buildConfigurationList = AD51AB0A17A78095001DE55D /* Build configuration list for PBXProject "DynamicLabel" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AD51AB0617A78095001DE55D;
+			productRefGroup = AD51AB1017A78095001DE55D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD51AB0E17A78095001DE55D /* DynamicLabel */,
+				AD51AB2E17A78096001DE55D /* DynamicLabelTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD51AB0D17A78095001DE55D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD51AB5217A83430001DE55D /* MainStoryboard.storyboard in Resources */,
+				AD51AB1F17A78095001DE55D /* InfoPlist.strings in Resources */,
+				AD51AB2A17A78095001DE55D /* Images.xcassets in Resources */,
+				AD51AB5417A84F3F001DE55D /* DLDynamicCellXib.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD51AB2D17A78096001DE55D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD51AB3C17A78096001DE55D /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD51AB0B17A78095001DE55D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD51AB4C17A78135001DE55D /* DLDynamicLabel.m in Sources */,
+				AD51AB2817A78095001DE55D /* DynamicLabel.xcdatamodeld in Sources */,
+				AD51AB4D17A78138001DE55D /* DLDynamicCell.m in Sources */,
+				AD51AB5117A78215001DE55D /* DLTableViewController.m in Sources */,
+				AD51AB2517A78095001DE55D /* DLAppDelegate.m in Sources */,
+				AD51AB2117A78095001DE55D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD51AB2B17A78096001DE55D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD51AB3E17A78096001DE55D /* DynamicLabelTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD51AB3617A78096001DE55D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD51AB0E17A78095001DE55D /* DynamicLabel */;
+			targetProxy = AD51AB3517A78096001DE55D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AD51AB1D17A78095001DE55D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD51AB1E17A78095001DE55D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AD51AB3A17A78096001DE55D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD51AB3B17A78096001DE55D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD51AB3F17A78096001DE55D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AD51AB4017A78096001DE55D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD51AB4217A78096001DE55D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DynamicLabel/DynamicLabel-Prefix.pch";
+				INFOPLIST_FILE = "DynamicLabel/DynamicLabel-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AD51AB4317A78096001DE55D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DynamicLabel/DynamicLabel-Prefix.pch";
+				INFOPLIST_FILE = "DynamicLabel/DynamicLabel-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AD51AB4517A78096001DE55D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DynamicLabel.app/DynamicLabel";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DynamicLabel/DynamicLabel-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "DynamicLabelTests/DynamicLabelTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		AD51AB4617A78096001DE55D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/DynamicLabel.app/DynamicLabel";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "DynamicLabel/DynamicLabel-Prefix.pch";
+				INFOPLIST_FILE = "DynamicLabelTests/DynamicLabelTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD51AB0A17A78095001DE55D /* Build configuration list for PBXProject "DynamicLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD51AB3F17A78096001DE55D /* Debug */,
+				AD51AB4017A78096001DE55D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD51AB4117A78096001DE55D /* Build configuration list for PBXNativeTarget "DynamicLabel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD51AB4217A78096001DE55D /* Debug */,
+				AD51AB4317A78096001DE55D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD51AB4417A78096001DE55D /* Build configuration list for PBXNativeTarget "DynamicLabelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD51AB4517A78096001DE55D /* Debug */,
+				AD51AB4617A78096001DE55D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AD51AB2617A78095001DE55D /* DynamicLabel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AD51AB2717A78095001DE55D /* DynamicLabel.xcdatamodel */,
+			);
+			currentVersion = AD51AB2717A78095001DE55D /* DynamicLabel.xcdatamodel */;
+			path = DynamicLabel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AD51AB0717A78095001DE55D /* Project object */;
+}
