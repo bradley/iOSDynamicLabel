@@ -20,11 +20,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Load prototype table cell. 
-    static NSString *CellIdentifier = @"DynamicCell";
-    [self.tableView registerNib:[UINib nibWithNibName:@"DLDynamicCellXib" bundle:nil] forCellReuseIdentifier:CellIdentifier];
-    _cellPrototype = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
+    // Register reusable cell from our custom cell xib.
+    [self registerReusableCellForTableView:self.tableView];
+    // Create a prototype cell for cacluating cell heights with.
+    _cellPrototype = [_tableView dequeueReusableCellWithIdentifier:@"DynamicCell"];
+
     [self setupContentArray];
 }
 
@@ -47,6 +47,10 @@
     _contentArray = [NSArray arrayWithArray:mutableContentArray];
 }
 
+- (void)registerReusableCellForTableView:(UITableView *)tableView {
+    [_tableView registerNib:[UINib nibWithNibName:@"DLDynamicCellXib" bundle:nil] forCellReuseIdentifier:@"DynamicCell"];
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -60,9 +64,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *CellIdentifier = @"DynamicCell";
-    [_tableView registerNib:[UINib nibWithNibName:@"DLDynamicCellXib" bundle:nil] forCellReuseIdentifier:CellIdentifier];
-    DLDynamicCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    DLDynamicCell *cell = [_tableView dequeueReusableCellWithIdentifier:@"DynamicCell"];
     
     NSString *content = [_contentArray objectAtIndex:indexPath.row];
     cell.dynamicLabel.text = content;
